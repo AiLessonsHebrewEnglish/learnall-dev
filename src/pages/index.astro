@@ -1,0 +1,173 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Learning Hub — Math, English, AI & Programming">
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title"><span data-i18n="home.title">Learn Anything. Your Way.</span></h1>
+      <p class="hero-sub">
+        <span data-i18n="home.subtitle">
+        Math, English, AI, and Programming — build skills on your own schedule
+        or pair up with a tutor who keeps you on track.
+        </span>
+      </p>
+      <div class="hero-cta">
+        <a href="#subjects" class="btn btn-primary"><span data-i18n="home.browse">Browse subjects</span></a>
+        <a href="#how" class="btn btn-ghost"><span data-i18n="home.how">How it works</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="how" class="how">
+    <div class="container">
+      <h2 class="section-title"><span data-i18n="home.two_paths">Two paths, one goal</span></h2>
+      <div class="how-grid">
+        <article class="how-card">
+          <div class="how-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3><span data-i18n="home.self_title">Self-paced</span></h3>
+          <p>
+            <span data-i18n="home.self_desc">
+            Structured lessons, exercises, and checkpoints you move through at
+            your own speed. Revisit topics, skip what you know, and build a
+            personal learning path.
+            </span>
+          </p>
+        </article>
+        <article class="how-card">
+          <div class="how-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3><span data-i18n="home.tutor_title">With a tutor</span></h3>
+          <p>
+            <span data-i18n="home.tutor_desc">
+            Book a session, set a goal, and work through the material together.
+            A tutor adapts the pace, answers questions in context, and keeps
+            you accountable between sessions.
+            </span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="subjects" class="subjects">
+    <div class="container">
+      <h2 class="section-title"><span data-i18n="home.subjects_title">Subjects</span></h2>
+      <div class="subject-grid">
+
+        <article class="subject-card">
+          <a href="/subjects/math" class="subject-link">
+            <div class="subject-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6 L24 42"/>
+                <path d="M6 24 L42 24"/>
+                <circle cx="24" cy="24" r="10"/>
+                <path d="M20 14 L12 18 M28 14 L36 18 M20 34 L12 30 M28 34 L36 30"/>
+                <path d="M14 20 L18 24 L14 28 M34 20 L30 24 L34 28"/>
+              </svg>
+            </div>
+            <div>
+              <span class="subject-tag">Self-paced</span>
+              <h3><span data-i18n="subjects.math">Math</span></h3>
+              <p>
+                <span data-i18n="home.math_desc">
+                Arithmetic, algebra, geometry, calculus, and statistics — from
+                the basics to the parts that unlock the rest of the subjects
+                on this site.
+                </span>
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="subject-card">
+          <a href="/subjects/english" class="subject-link">
+            <div class="subject-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M30 6 L36 14 L42 10 L36 20 L42 26 L36 30 L30 38"/>
+                <path d="M18 6 L12 14 L6 10 L12 20 L6 26 L12 30 L18 38"/>
+              </svg>
+            </div>
+            <div>
+              <span class="subject-tag">Self-paced</span>
+              <h3><span data-i18n="subjects.english">English</span></h3>
+              <p>
+                <span data-i18n="home.english_desc">
+                Reading, writing, grammar, vocabulary, and conversation —
+                for native speakers sharpening their skills and learners
+                building confidence.
+                </span>
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="subject-card">
+          <a href="/subjects/ai" class="subject-link">
+            <div class="subject-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="20" cy="20" r="8"/>
+                <circle cx="28" cy="20" r="8"/>
+                <path d="M23 28 L25 38 L23 38"/>
+                <path d="M16 28 L20 34"/>
+                <path d="M28 12 L34 18"/>
+                <circle cx="36" cy="12" r="4" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <div>
+              <span class="subject-tag">Self-paced</span>
+              <h3><span data-i18n="subjects.ai">AI</span></h3>
+              <p>
+                <span data-i18n="home.ai_desc">
+                Machine learning, neural networks, data, and the practical
+                side of working with AI — concepts, intuition, and hands-on
+                application.
+                </span>
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="subject-card">
+          <a href="/subjects/programming" class="subject-link">
+            <div class="subject-icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 30 L14 18 L22 18 L22 12 L30 18 L30 30"/>
+                <path d="M22 24 L22 20"/>
+                <path d="M34 16 L42 22 L34 28"/>
+              </svg>
+            </div>
+            <div>
+              <span class="subject-tag">Self-paced</span>
+              <h3><span data-i18n="subjects.prog">Programming</span></h3>
+              <p>
+                <span data-i18n="home.prog_desc">
+                From first program to real projects — Python, JavaScript, web
+                development, algorithms, and the habits that make code
+                maintainable.
+                </span>
+              </p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="container">
+      <h2 class="section-title">Next step</h2>
+      <div class="next-step">
+        <p>
+          Pick a subject above, choose self-paced or tutor-led, and start where
+          you are — not where a syllabus says you should be.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Math">
+  <div class="page-wrap">
+    <div class="page-card">
+      <div class="page-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M24 6 L24 42"/>
+          <path d="M6 24 L42 24"/>
+          <circle cx="24" cy="24" r="10"/>
+          <path d="M20 14 L12 18 M28 14 L36 18 M20 34 L12 30 M28 34 L36 30"/>
+          <path d="M14 20 L18 24 L14 28 M34 20 L30 24 L34 28"/>
+        </svg>
+      </div>
+      <h1>Math</h1>
+      <p class="lead">
+        Numbers, patterns, and the language that describes how the world works.
+      </p>
+
+      <div class="mode-picker">
+        <button class="mode-btn active" data-mode="self">Self-paced</button>
+        <button class="mode-btn" data-mode="tutor">With a tutor</button>
+      </div>
+
+      <div class="mode-content" id="mode-self">
+        <h2>What you can learn</h2>
+        <ul>
+          <li><strong>Foundations</strong> — arithmetic, fractions, decimals, and number sense.</li>
+          <li><strong>Algebra</strong> — equations, functions, inequalities, and how variables relate.</li>
+          <li><strong>Geometry</strong> — shapes, angles, area, volume, and proof.</li>
+          <li><strong>Advanced</strong> — trigonometry, calculus, and statistics at your pace.</li>
+        </ul>
+        <p>
+          Work through lessons in order or jump to what you need. Each topic comes
+          with examples, practice, and a short check so you can see what stuck.
+        </p>
+      </div>
+
+      <div class="mode-content hidden" id="mode-tutor">
+        <h2>What a tutor helps with</h2>
+        <ul>
+          <li><strong>Find the gap</strong> — algebra, geometry, or calculus drag? A tutor traces it back to the first shaky step.</li>
+          <li><strong>Talk it through</strong> — explain a problem out loud, get nudges instead of just answers.</li>
+          <li><strong>Stay on pace</strong> — book sessions around a goal, like a class, an exam, or a project.</li>
+        </ul>
+        <p>
+          Bring a topic, a problem set, or a rough goal and the tutor adapts the
+          session to where you actually are. Between sessions you keep working
+          self-paced through the same material.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
